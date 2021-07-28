@@ -1,7 +1,4 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -12,3 +9,88 @@ body {
     background-position-y: 50%;
     background-size: cover;
 }
+
+#login {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 25px 15px 35px 15px;
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 215px;
+}
+
+#login p {
+    text-align: center;
+    font-weight: bold;
+}
+
+#login .tut {
+    width: 200px;
+    height: 30px;
+    margin: 10px 0px 0px 0px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 15px 5px 0px 5px;
+    background-color: rgba(255, 255, 255, 0.644);
+    transition: 0.1s ease-out;
+}
+
+#login .tut:focus {
+    outline: none;
+}
+
+#login .tut:hover {
+    background-color: rgba(255, 255, 255, 0.744);
+}
+
+#login button {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    border: 0px solid white;
+    color: white;
+    transform: translateX(80px) translateY(10px);
+    background-color: rgb(184, 38, 38);
+    font-size: 20px;
+    transition: 0.1s ease-out;
+}
+
+#login button:hover {
+    background-color: rgb(163, 32, 32);
+}
+
+#login .t {
+    font-size: 10px;
+    position: absolute;
+    transform: translateY(15px) translateX(5px);
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+}
+
+.check {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 15px;
+    border: none;
+}
+
+.log {
+    transform: translateY(9px);
+    font-size: 10px;
+    position: absolute;
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+}
+
+.check > input:checked {
+    background-color: #34495E;
+}
+
+.no-copy {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */     
+  }
